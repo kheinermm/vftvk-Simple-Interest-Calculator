@@ -15,17 +15,16 @@ function compute() {
     var interest = (principal * years * rate) / 100;
     var year = new Date().getFullYear() + parseInt(years);
     var result =
-      "If you deposit <span>" +
+      "If you deposit <mark>" +
       principal +
-      "</span>,<br>at an interest rate of <span>" +
+      "</mark>,<br>at an interest rate of <mark>" +
       rate +
-      "%</span><br>You will receive an amount of <span>" +
+      "%.</mark><br>You will receive an amount of <mark>" +
       interest +
-      "</span>,<br>in the year <span>" +
+      "</mark>,<br>in the year <mark>" +
       year +
-      "</span><br>";
+      "</mark><br>";
     document.getElementById("result").innerHTML = result;
     return true;
   }
 }
-     
